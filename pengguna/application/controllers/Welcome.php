@@ -22,7 +22,6 @@ class Welcome extends CI_Controller {
 
 			if ($output =="ada")
 			{
-
 				$this->session->set_flashdata('pesan_sukses','Anda Berhasil Login');
 				redirect('beranda','refresh');
 			} else {
@@ -31,9 +30,6 @@ class Welcome extends CI_Controller {
 				redirect('/','refresh');
 			}
 		}
-
-
-
 $this->load->view('login',$data);
 	
 		

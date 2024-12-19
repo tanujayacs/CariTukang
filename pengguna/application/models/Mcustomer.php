@@ -20,6 +20,7 @@ class Mcustomer extends CI_Model{
 		if (!empty($cekcustomer)) {
 			$this->session->set_userdata("id_customer", $cekcustomer["id_customer"]);
 			$this->session->set_userdata("email_customer", $cekcustomer["email_customer"]);
+			$this->session->set_userdata("username_customer", $cekcustomer["username_customer"]);
 			$this->session->set_userdata("nama_customer", $cekcustomer["nama_customer"]);
 			$this->session->set_userdata("alamat_customer", $cekcustomer["alamat_customer"]);
 			$this->session->set_userdata("wa_customer", $cekcustomer["wa_customer"]);
@@ -27,5 +28,11 @@ class Mcustomer extends CI_Model{
 		} else {
 			return "gak ada";
 		}
+	}
+
+	function register($m)
+	{
+		$this->db->insert('customer', $m);
+		
 	}
 }

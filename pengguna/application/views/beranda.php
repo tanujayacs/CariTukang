@@ -242,11 +242,6 @@ a.btn-orange:hover {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-.d-flex {
-    margin-bottom: 20px;
-    /* Space between logo/email and the rest of the footer */
-}
 </style> 
  
  <!-- HERO -->

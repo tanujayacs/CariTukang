@@ -92,29 +92,38 @@
             <form method="post">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+                    <input type="email" class="form-control" id="email" name="email_customer" placeholder="Masukkan email" value="<?php set_value("email_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('email_customer')?></span>
                 </div>
                 <div class="mb-3">
-                    <label for="first-name" class="form-label">Nama Anda</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Masukkan nama Anda">
+                    <label for="first-name" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="first-name" name="username_customer" placeholder="Masukkan Username" value="<?php set_value("username_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('username_customer')?></span>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">No. Telepon</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Masukkan no telepon">
+                    <input type="text" class="form-control"  name="wa_customer" placeholder="Masukkan no telepon" value="<?php set_value("wa_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('wa_customer')?></span>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+                    <input type="password" class="form-control" id="password" name="password_customer" placeholder="Masukkan password" value="<?php set_value("password_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('password_customer')?></span>
                 </div>
                 <div class="mb-3">
+                    <label for="password" class="form-label">Alamat Lengkap</label>
+                    <input type="text" class="form-control" id="password" name="alamat_customer" placeholder="Masukkan Alamat Lengkap" value="<?php set_value("alamat_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('alamat_customer')?></span>
+                </div>
+                <!-- <div class="mb-3">
                     <label for="confirm-password" class="form-label">Ulangi Password</label>
                     <input type="password" class="form-control" id="confirm-password" placeholder="Ulangi password">
-                </div>
+                </div> -->
                 <div class="d-grid">
                     <button type="submit" class="btn btn-primary">Daftar Akun</button>
                 </div>
                 <div class="login-link">
-                    <p>Sudah Punya Akun? <a href="#">Masuk</a></p>
+                    <p>Sudah Punya Akun? <a href="<?php echo base_url('welcome') ?>">Masuk</a></p>
                 </div>
             </form>
         </div>
@@ -123,4 +132,22 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<?php if ($this->session->flashdata('pesan_sukses')) : ?>
+    <script>
+        swal("Sukses!", "<?php echo $this->session->flashdata('pesan_sukses'); ?>", "success");
+    </script>
+
+<?php endif ?>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<?php if ($this->session->flashdata('pesan_gagal')) : ?>
+    <script>
+        swal("Gagal!", "<?php echo $this->session->flashdata('pesan_gagal'); ?>", "error");
+    </script>
+
+<?php endif ?>
 </html>
