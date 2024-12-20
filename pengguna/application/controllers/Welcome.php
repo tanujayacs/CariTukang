@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends CI_Controller {
 	public function index()
 	{
+
+	
 		// untuk login
 		$data['url_login'] = $this->config->item('url_login'); // Ambil dari config
         // $this->load->view('login', $data);
@@ -23,13 +25,14 @@ class Welcome extends CI_Controller {
 			if ($output =="ada")
 			{
 				$this->session->set_flashdata('pesan_sukses','Anda Berhasil Login');
-				redirect('beranda','refresh');
+				redirect('profil','refresh');
 			} else {
 
 				$this->session->set_flashdata('pesan_gagal','Loh kok gk bisa Login');
 				redirect('/','refresh');
 			}
 		}
+
 $this->load->view('login',$data);
 	
 		

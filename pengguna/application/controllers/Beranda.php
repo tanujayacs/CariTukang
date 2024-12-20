@@ -9,8 +9,11 @@ class Beranda extends CI_Controller {
     }
 	public function index()
 	{
+
+		$data['url_bgalur'] = $this->config->item('url_bgalur');
+
 		$this->load->view('header');
-		$this->load->view('beranda');
+		$this->load->view('beranda', $data);
 		$this->load->view('footer');
 		
 	}
