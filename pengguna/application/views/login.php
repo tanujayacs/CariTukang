@@ -92,13 +92,13 @@
             <div class="mb-3">
                 <input type="text" placeholder="USERNAME" name="username_customer" class="form-control" value="<?php set_value("username_customer") ?>">
                 <div class="text-danger small">
-                    <?php echo form_error("username") ?>
+                    <?php echo form_error("username_customer") ?>
                 </div>
             </div>
             <div class="mb-3">
                 <input type="password" placeholder="PASSWORD" name="password_customer" class="form-control" value="<?php set_value("password_customer") ?>">
                 <div class="text-danger small">
-                    <?php echo form_error("password") ?>
+                    <?php echo form_error("password_customer") ?>
                 </div>
             </div>
             <button class="btn btn-primary w-100">LOGIN</button>

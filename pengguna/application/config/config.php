@@ -35,10 +35,15 @@ $config['url_register'] = 'http://localhost/CariTukang/assets/register/register.
 
 //untuk assets icons 
 $config['url_logoblack'] = 'http://localhost/CariTukang/assets/icon/logoblack.jpg';
+$config['url_bgalur'] = 'http://localhost/CariTukang/assets/icon/bg-alur.png';
+$config['url_testi'] = 'http://localhost/CariTukang/assets/icon/img-testimoni.png';
+$config['url_booking'] = 'http://localhost/CariTukang/assets/icon/hero1.png';
+$config['url_mitra'] = 'http://localhost/CariTukang/assets/icon/heroo.png';
+
 
 $config['url_logowhite'] = 'http://localhost/CariTukang/assets/icon/logo_white.png';
 $config['url_icon'] = 'http://localhost/CariTukang/assets/icon/cat.png';
-$config['url_icon'] = 'http://localhost/CariTukang/assets/icon/hero.png';
+$config['url_hero'] = 'http://localhost/CariTukang/assets/icon/hero.png';
 $config['url_ig'] = 'http://localhost/CariTukang/assets/icon/ig.png';
 $config['url_linkedin'] = 'http://localhost/CariTukang/assets/icon/linkedin.png';
 $config['url_tiktok'] = 'http://localhost/CariTukang/assets/icon/tt.png';

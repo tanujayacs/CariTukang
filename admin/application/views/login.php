@@ -37,7 +37,9 @@
 		</div>
 	</div>
 
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	<?php if ($this->session->flashdata('pesan_sukses')) : ?>
 		<script>
@@ -54,6 +56,5 @@
 		</script>
 
 	<?php endif ?>
-</body>
 
 </html>
