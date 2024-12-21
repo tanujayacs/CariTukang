@@ -236,8 +236,9 @@
     <div class="sidebar d-flex flex-column align-items-center text-center">
         <div class="profile-section text-center mb-4 pt-4">
             <img
-                src="./assets/fotouser.png"
+                src="<?php echo $this->config->item('url_fotouser'); ?>"
                 alt="Profile Image"
+                style="background-image: none;"
                 class="rounded-circle profile-image" />
             <h5 class="mt-2">Bessie Cooper</h5>
             <button class="btn btn-warning btn-sm mt-2">Edit</button>
@@ -285,6 +286,6 @@
                 </div>
             </div>
         </div>
-        <a href="<?php echo base_url('booking'); ?>"class="btn btn-orange w-100">BOOKING TUKANG LAGI!</a>
+        <a href="<?php echo base_url('booking'); ?>"class="btn btn-orange w-100">BOOKING TUKANG</a>
     </div>
 </div>

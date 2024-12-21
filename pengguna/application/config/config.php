@@ -39,6 +39,8 @@ $config['url_bgalur'] = 'http://localhost/CariTukang/assets/icon/bg-alur.png';
 $config['url_testi'] = 'http://localhost/CariTukang/assets/icon/img-testimoni.png';
 $config['url_booking'] = 'http://localhost/CariTukang/assets/icon/hero1.png';
 $config['url_mitra'] = 'http://localhost/CariTukang/assets/icon/heroo.png';
+$config['url_fotouser'] = 'http://localhost/CariTukang/assets/icon/fotouser.png';
+$config['url_artikel'] = 'http://localhost/CariTukang/assets/icon/gambar_artikel.png';
 
 
 $config['url_logowhite'] = 'http://localhost/CariTukang/assets/icon/logo_white.png';

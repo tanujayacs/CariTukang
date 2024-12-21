@@ -1,4 +1,28 @@
- 
+ <style>
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    /* Shadow lembut */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Tambahkan efek hover */
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow lebih besar saat hover */
+}
+
+.card-image img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 15px;
+}
+ </style>
+
  <!-- HERO -->
  <div class="hero">
         <div class="text" id="hero-text">

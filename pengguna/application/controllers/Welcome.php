@@ -4,8 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends CI_Controller {
 	public function index()
 	{
-
-	
 		// untuk login
 		$data['url_login'] = $this->config->item('url_login'); // Ambil dari config
         // $this->load->view('login', $data);

@@ -17,8 +17,8 @@
 
     <!-- HEADLINE -->
     <div class="text-center mt-3">
-        <h1 class="fw-bold">Pendaftaran Mitra CariTukang</h1>
-        <p>Silahkan diisi dengan lengkap para mitra CariTukang. <br>
+        <h1 class="fw-bold">Pendaftaran Boking Tukang</h1>
+        <p>Silahkan diisi dengan lengkap.<br>
             jika ada kendala, silahkan hubungi Customer Services di halaman bawah.</p>
     </div>
 

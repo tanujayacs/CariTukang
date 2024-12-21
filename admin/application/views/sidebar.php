@@ -186,10 +186,9 @@
 </head>
 
 <body>
-    
     <div class="wrapper">
         <aside id="sidebar">
-            <div class="d-flex">
+            <div class="d-flex ">
                 <button class="toggle-btn" type="button">
                     <i class="lni lni-user-1"></i>
                 </button>

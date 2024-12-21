@@ -12,7 +12,7 @@
     <style>
     body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     margin: 0;
     padding: 0;
 }
@@ -118,29 +118,6 @@ a.btn-orange:hover {
 .carousel-slider>image-container img {
     max-width: 100%;
     height: auto;
-}
-
-.card {
-    border: 1px solid #ddd;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
-    /* Shadow lembut */
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    /* Tambahkan efek hover */
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
-    /* Shadow lebih besar saat hover */
-}
-
-.card-image img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.card-body {
-    padding: 15px;
 }
 
 
@@ -271,8 +248,8 @@ a.btn-orange:hover {
 <body class="d-flex flex-column min-vh-100">
     <nav class="nav navbar navbar-expand-lg navbar-white bg-light sticky-top shadow-sm">
         <div class="container py-1">
-            <a class="navbar-brand mx-5" href="<?php echo base_url('beranda'); ?>">
-                <img src="<?php echo $this->config->item('url_logoblack'); ?>" alt="CariTukang" style="height: 40px;">
+            <a class="navbar-brand mx-5 " href="<?php echo base_url('beranda'); ?>">
+                <img src="<?php echo $this->config->item('url_logoblack'); ?>" style="height: 40px;">
 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -283,7 +260,7 @@ a.btn-orange:hover {
             
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link me-1" href="#">Artikel</a>
+                        <a class="nav-link me-1" href="<?php echo base_url('artikel'); ?>">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-1" href="#">Pencapaian</a>
@@ -292,7 +269,7 @@ a.btn-orange:hover {
                         <a class="nav-link me-1" href="#">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-1" href="#">About Us</a>
+                        <a class="nav-link me-1" href="<?php echo base_url('aboutus'); ?> ">About Us</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">FAQ</a>

@@ -1,4 +1,3 @@
-<body>
     <!-- HERO -->
     <div class="hero_mitra text-center" style="background: #024CAA;">
         <div class="row align-items-center">
@@ -33,10 +32,10 @@
     <!-- FORM -->
     <div class="container mt-5">
         <h3 class="mb-3 text-center">Data Diri</h3>
-        <form class="needs-validation" novalidate="">
+        <form class="needs-validation" novalidate="" method="post">
             <div class="row g-3">
                 <div class="col-sm-12">
-                    <label for="firstName" class="form-label">Nama Lengkap</label>
+                    <label for="firstName" name='nama_mitra' class="form-label">Nama Lengkap</label>
                     <input type="text" class="form-control" id="firstName" placeholder="Misal : Abdul Aziz" value=""
                         required="">
                     <div class="invalid-feedback">
@@ -46,7 +45,7 @@
 
                 <div class="col-sm-6">
                     <label for="firstName" class="form-label">Nomor Telepon</label>
-                    <input type="text" class="form-control" id="firstName"
+                    <input type="number" name='wa_mitra' class="form-control" id="firstName"
                         placeholder="Inputkan Nomor yang bisa Dihubungi lewat WA" value="" required="">
                     <div class="invalid-feedback">
                         Valid first name is required.
@@ -55,7 +54,7 @@
 
                 <div class="col-sm-6">
                     <label for="lastName" class="form-label">Usia</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Misal : 31 Tahun" value=""
+                    <input type="number" name='usia_mitra' class="form-control" id="lastName" placeholder="Misal : 31 Tahun" value=""
                         required="">
                     <div class="invalid-feedback">
                         Valid last name is required.
@@ -64,7 +63,7 @@
 
                 <div class="col-sm-12">
                     <label for="firstName" class="form-label">Alamat Lengkap</label>
-                    <input type="text" class="form-control" id="firstName"
+                    <input type="text" name='nama_mitra' class="form-control" id="firstName"
                         placeholder="Misal : Jalan Pandega Marta XI No.1, Manggung, Caturtunggal, Kec. Depok, Kab. Sleman, Daerah Istimewa Yogyakarta"
                         value="" required="">
                     <div class="invalid-feedback">
@@ -74,7 +73,7 @@
 
                 <div class="col-sm-6">
                     <label for="firstName" class="form-label">Kota/Kabupaten</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Misal : Kabupaten Sleman"
+                    <input type="text" name='kabupaten/kota' class="form-control" id="firstName" placeholder="Misal : Kabupaten Sleman"
                         value="" required="">
                     <div class="invalid-feedback">
                         Valid first name is required.
@@ -83,7 +82,7 @@
 
                 <div class="col-sm-6">
                     <label for="lastName" class="form-label">Kecamatan</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Misal : Kecamatan Depok" value=""
+                    <input type="text" name='kecamatan' class="form-control" id="lastName" placeholder="Misal : Kecamatan Depok" value=""
                         required="">
                     <div class="invalid-feedback">
                         Valid last name is required.
@@ -94,16 +93,19 @@
 
                 <div class="col-sm-6">
                     <label for="firstName" class="form-label">Peran/Profesi Tukang</label>
-                    <input type="text" class="form-control" id="firstName"
-                        placeholder="Misal : Tukang/Kepala Tukang/Mandor/" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid first name is required.
-                    </div>
+                    <select class="form-control mb-3" name="id_peran" required>
+                        <option value="">Pilih Peran</option>
+                        <?php foreach ($peran as $p): ?>
+                            <option value="<?php echo $p['id_peran']; ?>">
+                                <?php echo $p['nama_peran']; ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
 
                 <div class="col-sm-6">
-                    <label for="lastName" class="form-label">Pengalaman menjadi Tukang</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Misal : 5 Tahun 8 Bulan" value=""
+                    <label for="lastName" name='pengalaman_mitra' class="form-label">Pengalaman menjadi Tukang</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Misal : 5 Tahun" value=""
                         required="">
                     <div class="invalid-feedback">
                         Valid last name is required.
@@ -112,7 +114,19 @@
 
                 <h4 class="mt-5 mb-3 text-center">Keahlian Khusus</h4>
 
-                <div class="container">
+                <form action="<?php echo base_url('mitra'); ?>" method="post">
+                    <label for="keahlian">Pilih Keahlian (Maks 3):</label>
+                    <select id="keahlian" name="keahlian[]" multiple class="form-control" required>
+                        <?php foreach ($keahlian as $k): ?>
+                            <option value="<?php echo $k['id_keahlian']; ?>">
+                                <?php echo $k['nama_keahlian']; ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                    <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                </form>
+
+                <!-- <div class="container">
                     <div class="row">
                         <div class="col-md-3">
 
@@ -267,13 +281,24 @@
                     <span>
                         <p class="text-muted">*bisa memilih lebih dari 1 keahlian</p>
                     </span>
-                </div>
+                </div> -->
             </div>
 
 
-            <button class="w-100 btn btn-primary btn-lg my-5" type="submit"  style="background-color: #EC8305">Daftar menjadi Mitra</button>
+            <button class="w-100 btn btn-primary btn-lg my-5" type="submit" style="background-color: #EC8305">Daftar menjadi Mitra</button>
         </form>
     </div>
+    <script>
+        const selectElement = document.getElementById('keahlian');
+        const maxSelection = 3;
 
+        selectElement.addEventListener('change', function() {
+            const selectedOptions = Array.from(selectElement.selectedOptions);
+            if (selectedOptions.length > maxSelection) {
+                alert(`Maksimal hanya ${maxSelection} pilihan!`);
+                selectedOptions[selectedOptions.length - 1].selected = false; // Batalkan pilihan terakhir
+            }
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
