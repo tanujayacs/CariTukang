@@ -22,12 +22,12 @@
 				<tr>
 					<td><?php echo $key + 1 ?></td>
 					<td><?php echo $value['nama_mitra'] ?></td>
-					<td><?php echo $value['usia_mitra'] ?></td>
+					<td><?php echo $value['usia_mitra'] ?> Tahun</td>
 					<td><?php echo $value['wa_mitra'] ?></td>
 					<td><?php echo $value['alamat_lengkap'] ?></td>
 					<td><?php echo $value['kabupaten/kota'] ?></td>
 					<td><?php echo $value['kecamatan'] ?></td>
-					<td><?php echo $value['pengalaman_mitra'] ?></td>
+					<td><?php echo $value['pengalaman_mitra'] ?> Tahun</td>
 					<td><?php echo $value['nama_peran'] ?></td>
 					<td><?php echo $value['nama_keahlian'] ?></td>
 					<!-- <td>

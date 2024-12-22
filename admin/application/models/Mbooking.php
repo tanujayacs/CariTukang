@@ -5,14 +5,25 @@ class Mbooking extends CI_Model
 	function tampil()
 	{
 		$this->db->select('booking.*,keahlian.nama_keahlian');
+		$this->db->select('booking.id_booking, booking.nama_booking, booking.wa_booking, customer.nama_customer, customer.wa_customer');
 		$this->db->from('booking');
 		// $this->db->join('peran', 'booking.id_peran = peran.id_peran', 'left'); // Sesuaikan kolom relasi
 
         // $this->db->join('customer', 'booking.id_customer = customer.id_customer', 'left'); // Sesuaikan kolom relasi
+		$this->db->join('customer', 'booking.id_customer = customer.id_customer', 'left'); // Join tabel 
 		$this->db->join('keahlian', 'booking.id_keahlian = keahlian.id_keahlian', 'left'); // Sesuaikan kolom relasi
 		$q = $this->db->get();
 		return $q->result_array();
 	}
+
+	public function get_booking_with_customer()
+    {
+       
+        $this->db->from('booking');
+        $this->db->join('customer', 'booking.id_customer = customer.id_customer', 'left'); // Join tabel customer
+        $query = $this->db->get();
+        return $query->result_array(); // Kembalikan data sebagai array
+    }
 
     function keahlian()
 	{

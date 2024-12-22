@@ -262,12 +262,12 @@ a.btn-orange:hover {
                     <li class="nav-item">
                         <a class="nav-link me-1" href="<?php echo base_url('artikel'); ?>">Artikel</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link me-1" href="#">Pencapaian</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-1" href="#">Testimoni</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link me-1" href="<?php echo base_url('aboutus'); ?> ">About Us</a>
                     </li>

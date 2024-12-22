@@ -47,7 +47,7 @@
 
         .wrapper {
             display: flex;
-           
+
         }
 
         .main {
@@ -56,23 +56,18 @@
             overflow: hidden;
             transition: all 0.35s ease-in-out;
             background-color: #fafbfe;
-            
+
         }
 
         #sidebar {
             width: 300px;
             min-width: 70px;
             z-index: 1000;
-            transition: all .25s ease-in-out;
+            transition: all 0.25s ease-in-out;
             background-color: #393944;
             display: flex;
             flex-direction: column;
         }
-
-        /* #sidebar.expand {
-            width: 260px;
-            min-width: 260px;
-        } */
 
         .toggle-btn {
             background-color: transparent;
@@ -96,81 +91,55 @@
             font-weight: 600;
         }
 
-        /* #sidebar:not(.expand) .sidebar-logo,
-        #sidebar:not(.expand) a.sidebar-link span {
-            display: none;
-        } */
-
         .sidebar-nav {
             padding: 2rem 0;
             flex: 1 1 auto;
         }
 
         a.sidebar-link {
-            padding: .625rem 1.625rem;
+            padding: 0.625rem 1.625rem;
             color: #FFF;
             display: block;
             font-size: 0.9rem;
             white-space: nowrap;
             border-left: 3px solid transparent;
+            transition: all 0.2s ease-in-out;
         }
 
         .sidebar-link i {
             font-size: 1.1rem;
-            margin-right: .75rem;
+            margin-right: 0.75rem;
         }
 
         a.sidebar-link:hover {
-            background-color: rgba(255, 255, 255, .075);
+            background-color: rgba(255, 255, 255, 0.075);
             border-left: 3px solid #ffffff;
         }
 
-        .sidebar-item {
-            position: relative;
+        .sidebar-item.active a.sidebar-link {
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Warna latar untuk item aktif */
+            border-left: 3px solid #007bff;
+            /* Warna border kiri untuk item aktif */
+            font-weight: bold;
         }
 
-        /* 
-        #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
-            position: absolute;
-            top: 0;
-            left: 70px;
-            background-color: #0e2238;
-            padding: 0;
-            min-width: 15rem;
-            display: none;
-        }*/
-
-        #sidebar .sidebar-link[data-bs-toggle="collapse"]::after {
-            border: solid;
-            border-width: 0 .075rem .075rem 0;
-            content: "";
-            display: inline-block;
-            padding: 2px;
-            position: absolute;
-            right: 1.5rem;
-            top: 1.4rem;
-            transform: rotate(45deg);
-            transition: all .2s ease-out;
+        .sidebar-item.active a.sidebar-link i {
+            color: #007bff;
+            /* Warna ikon untuk item aktif */
         }
-
-        
-
-        #sidebar .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
-            transform: rotate(135deg);
-            transition: all .2s ease-out;
-        } 
 
         .side-footer {
             background-color: #EBEBEB;
             color: #202020;
             padding: 10px 0px 1px 20px;
-            /* padding: 1rem; */
-            position:relative;        
+            position: relative;
             bottom: 0;
             width: 100%;
         }
 
-        .nav{
+
+        .nav {
             background-color: #024CAA;
             padding: 0.5rem;
             /* position: fixed; */
@@ -197,97 +166,53 @@
                 </div>
             </div>
             <ul class="sidebar-nav">
-                <!-- <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="lni lni-protection"></i>
-                        <span>Auth</span>
-                    </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Register</a>
-                        </li>
-                    </ul>
-                </li> -->
-                
-
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'dashboard' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('dashboard'); ?>" class="sidebar-link">
-                    <i class="bi bi-speedometer2"></i>
+                        <i class="bi bi-speedometer2"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'customer' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('customer'); ?>" class="sidebar-link">
-                    <i class="bi bi-people-fill"></i>
+                        <i class="bi bi-people-fill"></i>
                         <span>Customer</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'mitra' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('mitra'); ?>" class="sidebar-link">
-                    <i class="bi bi-person-vcard-fill"></i>
+                        <i class="bi bi-person-vcard-fill"></i>
                         <span>Mitra</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'booking' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('booking'); ?>" class="sidebar-link">
-                    <i class="bi bi-journal-plus"></i>
+                        <i class="bi bi-journal-plus"></i>
                         <span>Booking</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'artikel' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('artikel'); ?>" class="sidebar-link">
-                    <i class="bi bi-book"></i>
+                        <i class="bi bi-book"></i>
                         <span>Artikel</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'ulasan' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('ulasan'); ?>" class="sidebar-link">
-                    <i class="bi bi-chat-square-text"></i>
+                        <i class="bi bi-chat-square-text"></i>
                         <span>Testimoni</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'keahlian' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('keahlian'); ?>" class="sidebar-link">
-                    <i class="bi bi-inboxes"></i>
+                        <i class="bi bi-inboxes"></i>
                         <span>Keahlian</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
+                <li class="sidebar-item <?php echo $this->uri->segment(1) === 'peran' ? 'active' : ''; ?>">
                     <a href="<?php echo base_url('peran'); ?>" class="sidebar-link">
-                    <i class="bi bi-inboxes"></i>
+                        <i class="bi bi-inboxes"></i>
                         <span>Peran</span>
                     </a>
                 </li>
             </ul>
-            <!-- <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="lni lni-exit"></i>
-                    <span>Logout</span>
-                </a>
-            </div> -->
         </aside>
-
-        <!-- home page -->
-        <!-- <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                    Sidebar Bootstrap 5
-                </h1>
-            </div>
-        </div> -->
-
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script> -->
-       
-            

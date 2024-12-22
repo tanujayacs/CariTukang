@@ -25,6 +25,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/CariTukang/pengguna';
 
+//untuk assets file tampilan
+$config['assets_artikel'] = $_SERVER['DOCUMENT_ROOT']."/CariTukang/assets/artikel/";
+$config['url_artikel'] = 'http://localhost/CariTukang/assets/artikel/';
+$config['assets_booking'] = $_SERVER['DOCUMENT_ROOT']."/CariTukang/assets/booking/";
+$config['url_booking'] = 'http://localhost/CariTukang/assets/booking/';
+
 #login
 $config['url_login'] = 'http://localhost/CariTukang/assets/login/login.png';
 $config['url_person'] = 'http://localhost/CariTukang/assets/login/profil.png';
