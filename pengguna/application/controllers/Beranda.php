@@ -17,5 +17,16 @@ class Beranda extends CI_Controller {
 		$this->load->view('footer');
 		
 	}
+
+	public function FAQ()
+	{
+
+		$data['url_bgalur'] = $this->config->item('url_bgalur');
+
+		$this->load->view('header');
+		$this->load->view('faq', $data);
+		$this->load->view('footer');
+		
+	}
 }
 ?>

@@ -101,6 +101,11 @@
                     <span class="text-muted"><?php echo form_error('username_customer')?></span>
                 </div>
                 <div class="mb-3">
+                    <label for="first-name" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="first-name" name="nama_customer" placeholder="Masukkan Nama" value="<?php set_value("nama_customer") ?>">
+                    <span class="text-muted"><?php echo form_error('nama_customer')?></span>
+                </div>
+                <div class="mb-3">
                     <label for="phone" class="form-label">No. Telepon</label>
                     <input type="text" class="form-control"  name="wa_customer" placeholder="Masukkan no telepon" value="<?php set_value("wa_customer") ?>">
                     <span class="text-muted"><?php echo form_error('wa_customer')?></span>

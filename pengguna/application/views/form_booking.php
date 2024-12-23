@@ -64,7 +64,7 @@
                 <!-- file hidden -->
                 <div class="col-sm-6">
                     <!-- <label for="firstName" class="form-label">Nama booking</label> -->
-                    <input type="hidden" name="nama_booking" class="form-control" id="firstName"  value="<?php echo isset($customer['nama_booking']) ? $customer['nama_booking'] : ''; ?>" 
+                    <input type="hidden" name="nama_booking" class="form-control" id="firstName"  value="<?php echo $customer['nama_booking']; ?>" 
                        readonly  required="">
                     <div class="invalid-feedback">
                         Valid first name is required.
@@ -96,7 +96,7 @@
                 <h4 class="mb-3">Fotokan Kendala yang Anda Alami</h4>
                 <div class="row">
                     <div class="col-sm-2">
-                    <input type="file" name="foto_kendala" class="form-control" style="width: 300px; height: 300px;">
+                    <input type="file" name="foto_kendala" class="form-control" style="width: 400px;" required>
                         <!-- <img src="./assets/fotokerusakan.png" alt="" style="width: 150px; height: 150px;"> -->
                     </div>
                 </div>

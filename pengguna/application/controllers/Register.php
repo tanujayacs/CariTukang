@@ -12,6 +12,7 @@ class Register extends CI_Controller
 
 		$this->form_validation->set_rules('email_customer', 'email_customer', 'required|is_unique[customer.email_customer]');
         $this->form_validation->set_rules('username_customer', 'username_customer', 'required');
+        $this->form_validation->set_rules('nama_customer', 'nama_customer', 'required');
         $this->form_validation->set_rules('wa_customer', 'wa_customer', 'required');
 		$this->form_validation->set_rules('password_customer', 'password_customer', 'required');
 		$this->form_validation->set_rules('alamat_customer', 'alamat_customer', 'required');
@@ -23,6 +24,7 @@ class Register extends CI_Controller
 
 			$m['email_customer'] = $this->input->post('email_customer');
             $m['username_customer'] = $this->input->post('username_customer');
+            $m['nama_customer'] = $this->input->post('nama_customer');
             $m['wa_customer'] = $this->input->post('wa_customer');
 			$m['password_customer'] = $this->input->post('password_customer');
             // $m['password_customer'] = sha1($m['password_customer']);

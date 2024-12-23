@@ -23,11 +23,8 @@ class Booking extends CI_Controller
             $this->session->set_flashdata('pesan_sukses', 'data booking tersimpan');
             return redirect('profil', 'refresh');
         }
-
-
         $this->load->view('header');
         $this->load->view('form_booking', $data);
         $this->load->view('footer');
     }
-    
 }

@@ -272,7 +272,7 @@ a.btn-orange:hover {
                         <a class="nav-link me-1" href="<?php echo base_url('aboutus'); ?> ">About Us</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="<?php echo base_url('beranda/faq'); ?>">FAQ</a>
                     </li>
                     <!-- <li class="nav-item d-lg-none">
                         <a class="btn btn-orange nav-link me-2 mb-2" href="#">Daftar Mitra</a>
