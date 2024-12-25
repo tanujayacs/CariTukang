@@ -27,7 +27,7 @@ class Register extends CI_Controller
             $m['nama_customer'] = $this->input->post('nama_customer');
             $m['wa_customer'] = $this->input->post('wa_customer');
 			$m['password_customer'] = $this->input->post('password_customer');
-            // $m['password_customer'] = sha1($m['password_customer']);
+            $m['password_customer'] = sha1($m['password_customer']);
 			$m['alamat_customer'] = $this->input->post('alamat_customer');
 			
 

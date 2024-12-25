@@ -112,9 +112,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password_customer" placeholder="Masukkan password" value="<?php set_value("password_customer") ?>">
+                    <input type="password" class="form-control" id="password" name="password_customer" placeholder="Masukkan password" value="<?php set_value("password_valid") ?>">
                     <span class="text-muted"><?php echo form_error('password_customer')?></span>
                 </div>
+                <!-- <div class="mb-3">
+					<label for="">password</label>
+					<input type="text" name="password_customer" class="form-control" value="<?php echo set_value('password_customer') ?>">
+					<span class="text-muted"><?php echo form_error('password_customer')?></span>
+				</div> -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Alamat Lengkap</label>
                     <input type="text" class="form-control" id="password" name="alamat_customer" placeholder="Masukkan Alamat Lengkap" value="<?php set_value("alamat_customer") ?>">

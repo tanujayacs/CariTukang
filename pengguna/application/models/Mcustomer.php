@@ -10,7 +10,7 @@ class Mcustomer extends CI_Model{
 	{
 		$username_customer = $inputan['username_customer'];
 		$password_customer = $inputan['password_customer'];
-		// $password_customer = sha1($password_customer);
+		$password_customer = sha1($password_customer);
 
 		$this->db->where('username_customer', $username_customer);
 		$this->db->where('password_customer', $password_customer);

@@ -232,7 +232,7 @@
     }
 </style>
 
-<div class="d-flex pt-5">
+<div class="d-flex ">
     <div class="sidebar d-flex flex-column align-items-center text-center">
         <div class="profile-section text-center mb-4 pt-4">
             <img
@@ -241,7 +241,7 @@
                 style="background-image: none;"
                 class="rounded-circle profile-image" />
             <h5 class="mt-2">Bessie Cooper</h5>
-            <button class="btn btn-warning btn-sm mt-2">Edit</button>
+            <!-- <button class="btn btn-warning btn-sm mt-2">Edit</button> -->
         </div>
         <div class="button-sidebar">
             <button class="btn sidebar-button">
@@ -250,9 +250,9 @@
             <button class="btn sidebar-button">
                 <img src="assets/notif.png" alt="Icon"> <span>Notifikasi</span>
             </button>
-            <button class="btn sidebar-button">
+            <!-- <button class="btn sidebar-button">
                 <img src="assets/notif.png" alt="Icon"> <span>Hadiah</span>
-            </button>
+            </button> -->
             <button class="btn sidebar-button">
                 <img src="assets/notif.png" alt="Icon"> <span>Settings</span>
             </button>

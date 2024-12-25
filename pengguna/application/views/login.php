@@ -104,9 +104,9 @@
             <button class="btn btn-primary w-100">LOGIN</button>
         </form>
         <!-- Tautan tambahan -->
-        <div class="mt-3">
+        <!-- <div class="mt-3">
             <a href="#" class="forgot-password">Forgot password?</a>
-        </div>
+        </div> -->
         <div class="mt-2">
             <span class="text-white">Belum Punya Akun? <a href="<?php echo base_url('register') ?>" class="register">Register</a></span>
         </div>
