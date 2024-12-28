@@ -38,10 +38,10 @@ class Mitra extends CI_Controller
 
 
 			$this->Mmitra->simpan($inputan);
-			$this->session->set_flashdata('pesan_sukses', 'reggistrasi berhasil, silahkan login');
+			$this->session->set_flashdata('pesan_sukses', 'anda telah berhasil mendaftar sebagai mitra cari tukang');
 
 			
-			redirect('mitra','refresh');
+			redirect('beranda','refresh');
 			
 			
 		}

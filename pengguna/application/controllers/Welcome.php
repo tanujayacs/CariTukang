@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 			} else {
 
 				$this->session->set_flashdata('pesan_gagal','Loh kok gk bisa Login');
-				redirect('/','refresh');
+				redirect('welcome','refresh');
 			}
 		}
 

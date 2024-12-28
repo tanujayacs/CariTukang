@@ -240,21 +240,23 @@
                 alt="Profile Image"
                 style="background-image: none;"
                 class="rounded-circle profile-image" />
-            <h5 class="mt-2">Bessie Cooper</h5>
+                        
+            <h5 class="mt-2"><?php echo $this->session->userdata("nama_customer") ?></h5>
             <!-- <button class="btn btn-warning btn-sm mt-2">Edit</button> -->
         </div>
         <div class="button-sidebar">
             <button class="btn sidebar-button">
-                <img src="assets/notif.png" alt="Icon"> <span>Dashboard</span>
+                <i class="bi bi-house-fill mx-2"></i>
+                <span>Dashboard</span>
             </button>
             <button class="btn sidebar-button">
-                <img src="assets/notif.png" alt="Icon"> <span>Notifikasi</span>
+                <i class="bi bi-bell-fill  mx-2"></i><span>Notifikasi</span>
             </button>
             <!-- <button class="btn sidebar-button">
                 <img src="assets/notif.png" alt="Icon"> <span>Hadiah</span>
             </button> -->
             <button class="btn sidebar-button">
-                <img src="assets/notif.png" alt="Icon"> <span>Settings</span>
+                <i class="bi bi-gear-fill mx-2"></i><span>Settings</span>
             </button>
         </div>
     </div>
@@ -262,8 +264,8 @@
 
     <!-- CONTENT -->
     <div class="dashboard-content flex-grow-1">
-        <h1>Hi, Bessie Cooper</h1>
-        <p>Dengan jumlah booking kelipatan 10, dapatkan penawaran menarik</p>
+        <h1>Hi, <?php echo $this->session->userdata("nama_customer") ?></h1>
+        <!-- <p>Dengan jumlah booking kelipatan 10, dapatkan penawaran menarik</p> -->
 
         <div class="row">
             <div class="col-md-6">
@@ -286,6 +288,6 @@
                 </div>
             </div>
         </div>
-        <a href="<?php echo base_url('booking'); ?>"class="btn btn-orange w-100">BOOKING TUKANG</a>
+        <a href="<?php echo base_url('booking'); ?>" class="btn btn-orange w-100">BOOKING TUKANG</a>
     </div>
 </div>

@@ -121,7 +121,7 @@
 
                 <h4 class="mt-5 mb-3 text-center">Keahlian Khusus</h4>
 
-                <!-- <form action="<?php echo base_url('mitra'); ?>" method="post"> -->
+
                     <label for="keahlian">Pilih Keahlian</label>
                     <select id="keahlian" name="id_keahlian" multiple class="form-control" required>
                         <?php foreach ($keahlian as $k): ?>

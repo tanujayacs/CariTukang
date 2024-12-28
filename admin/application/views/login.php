@@ -25,7 +25,7 @@
 					</div>
 					<div class="bm-3">
 						<label for="">Password</label>
-						<input type="text" name="password" class="form-control" value="<?php set_value("password") ?>">
+						<input type="password" name="password" class="form-control" value="<?php set_value("password") ?>">
 
 						<div class="text-danger small">
 							<?php echo form_error("password") ?>
