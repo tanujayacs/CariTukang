@@ -1,7 +1,7 @@
-<div class="container mt-4 mb-4">
+<div class="container mt-4 mb-4 small">
 	<h5>Data mitra</h5>
 	<table class="table table-bordered" id="tableku">
-		<thead>
+		<thead style="background-color: #024CAA; color: #fff;">
 			<tr>
 				<th>No</th>
 				<th>Nama</th>
@@ -13,7 +13,7 @@
 				<th>Pengalaman</th>
 				<th>Peran</th>
 				<th>Keahlian</th>
-				<!-- <th>Opsi</th> -->
+				<th class="text-center">Opsi</th>	
 			</tr>
 		</thead>
 		<tbody>
@@ -24,12 +24,19 @@
 					<td><?php echo $value['nama_mitra'] ?></td>
 					<td><?php echo $value['usia_mitra'] ?> Tahun</td>
 					<td><?php echo $value['wa_mitra'] ?></td>
-					<td><?php echo $value['alamat_lengkap'] ?></td>
+					<td><?php echo substr($value['alamat_lengkap'], 0, 10); ?>...</td>
 					<td><?php echo $value['kabupaten/kota'] ?></td>
 					<td><?php echo $value['kecamatan'] ?></td>
 					<td><?php echo $value['pengalaman_mitra'] ?> Tahun</td>
 					<td><?php echo $value['nama_peran'] ?></td>
 					<td><?php echo $value['nama_keahlian'] ?></td>
+					<td class="text-center">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<a href="<?php echo base_url("mitra/ubah/" . $value["id_mitra"]) ?>" class="btn btn-warning me btn-sm">Ubah</a>
+							<a href="<?php echo base_url("mitra/hapus/" . $value["id_mitra"]) ?>" class="btn btn-danger btn-sm">Hapus</a>
+						</div>
+					</td>
+
 					<!-- <td>
 						<a href="<?php echo base_url("mitra/detail/" . $value['id_mitra']) ?>" class="btn btn-primary">Opsi</a>
 					</td> -->

@@ -1,4 +1,4 @@
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-4 small">
     <h5>Data Artikel</h5>
    
         <div class=" d-flex justify-content-end mb-3">
@@ -8,7 +8,7 @@
             </a>
         </div>
         <table class="table table-bordered" id="tableku">
-            <thead>
+            <thead style="background-color: #024CAA; color: #fff;">
                 <tr>
                     <th>No</th>
                     <th>Judul</th>
@@ -24,11 +24,11 @@
                         <td><?php echo $k + 1; ?></td>
                         <td><?php echo $v['judul_artikel'];  ?></td>
                         <td>
-                            <img src="<?php echo $this->config->item("url_artikel") . $v["foto_artikel"] ?>" width="300">
+                            <img src="<?php echo $this->config->item("url_artikel") . $v["foto_artikel"] ?>" width="150px">
                         </td>
                         <td>
-                            <a href="<?php echo base_url("artikel/ubah/" . $v["id_artikel"]) ?>" class="btn btn-warning">Ubah</a>
-                            <a href="<?php echo base_url("artikel/hapus/" . $v["id_artikel"]) ?>" class="btn btn-danger">Hapus</a>
+                            <a href="<?php echo base_url("artikel/ubah/" . $v["id_artikel"]) ?>" class="btn btn-warning btn-sm">Ubah</a>
+                            <a href="<?php echo base_url("artikel/hapus/" . $v["id_artikel"]) ?>" class="btn btn-danger btn-sm">Hapus</a>
                         </td>
                     </tr>
                 <?php endforeach ?>

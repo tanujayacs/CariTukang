@@ -41,7 +41,7 @@
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('nama_mitra')?></span>
+                    <span class="text-danger"><?php echo form_error('nama_mitra')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -51,7 +51,7 @@
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('wa_mitra')?></span>
+                    <span class="text-danger"><?php echo form_error('wa_mitra')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -61,7 +61,7 @@
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('usia_mitra')?></span>
+                    <span class="text-danger"><?php echo form_error('usia_mitra')?></span>
                 </div>
 
                 <div class="col-sm-12">
@@ -72,7 +72,7 @@
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('alamat_lengkap')?></span>
+                    <span class="text-danger"><?php echo form_error('alamat_lengkap')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -82,7 +82,7 @@
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('kabupaten/kota')?></span>
+                    <span class="text-danger"><?php echo form_error('kabupaten/kota')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -92,7 +92,7 @@
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('kecamatan')?></span>
+                    <span class="text-danger"><?php echo form_error('kecamatan')?></span>
                 </div>
 
                 <h4 class="mt-5 mb-1 text-center">Data Pekerjaan</h4>
@@ -107,6 +107,7 @@
                             </option>
                         <?php endforeach; ?>
                     </select>
+                    <span class="text-danger"><?php echo form_error('peran')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -116,20 +117,22 @@
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
-                    <span class="text-muted"><?php echo form_error('pengalaman_mitra')?></span>
+                    <span class="text-danger"><?php echo form_error('pengalaman_mitra')?></span>
                 </div>
 
                 <h4 class="mt-5 mb-3 text-center">Keahlian Khusus</h4>
 
 
                     <label for="keahlian">Pilih Keahlian</label>
-                    <select id="keahlian" name="id_keahlian" multiple class="form-control" required>
+                    <select id="keahlian" name="id_keahlian" multiple class="form-control" required style="width: 300px;">
                         <?php foreach ($keahlian as $k): ?>
                             <option value="<?php echo $k['id_keahlian']; ?>">
                                 <?php echo $k['nama_keahlian']; ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
+                    <span class="text-danger"><?php echo form_error('keahlian')?></span>
+
                     <button type="submit" class="w-100 btn btn-primary btn-lg mt-3 my-5" style="background-color: #EC8305">Daftar </button>
                 <!-- </form> -->
 

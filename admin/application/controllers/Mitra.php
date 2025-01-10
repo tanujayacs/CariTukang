@@ -29,6 +29,13 @@ class mitra extends  CI_Controller
         $this->load->view('footer');
     }
 
+    function hapus($id_mitra) {
+		$this->load->model("Mmitra");
+		$this->Mmitra->hapus($id_mitra);
+		$this->session->set_flashdata('pesan_sukses','Data mitra terhapus');
+		redirect('mitra','refresh');
+	}
+
     // function detail($id_mitra) {
 
     // 	$this->load->model('Mmitra');

@@ -31,7 +31,7 @@
 							<?php echo form_error("password") ?>
 						</div>
 					</div>
-					<button class="btn btn-primary">Login</button>
+					<button class="mt-2 btn btn-primary">Login</button>
 				</form>
 			</div>
 		</div>

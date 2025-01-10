@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <input type="text"  placeholder="PASSWORD" name="password_customer" class="form-control" value="<?php set_value("password_customer") ?>">
+                <input type="password"  placeholder="PASSWORD" name="password_customer" class="form-control" value="<?php set_value("password_customer") ?>">
                 <div class="text-danger small">
                     <?php echo form_error("password_customer") ?>
                 </div>

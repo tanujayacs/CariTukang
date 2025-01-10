@@ -1,8 +1,8 @@
 <div class="container mt-4 mb-4">
 	<h5>Data customer</h5>
 	<table class="table table-bordered" id="tableku">
-		<thead>
-			<tr>
+		<thead style="background-color: #024CAA; color: #fff;" class="small">
+			<tr >
 				<th>No</th>
 				<th>Email</th>
 				<th>Username</th>
@@ -15,7 +15,7 @@
 		<tbody>
 
 			<?php foreach ($customer as $key => $value) : ?>
-				<tr>
+				<tr class="small">
 					<td><?php echo $key + 1 ?></td>
 					<td><?php echo $value['email_customer'] ?></td>
 					<td><?php echo $value['username_customer'] ?></td>

@@ -42,4 +42,10 @@ class Mmitra extends CI_Model
 
 		return $d;
 	}
+
+	function hapus($id_mitra)
+	{
+		$this->db->Where('id_mitra', $id_mitra);
+		$this->db->delete('mitra');
+	}
 }

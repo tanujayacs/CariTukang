@@ -51,6 +51,7 @@
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
+                    <span class="text-danger"><?php echo form_error('kabupaten/kota')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -59,6 +60,7 @@
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
+                    <span class="text-danger"><?php echo form_error('kecamatan')?></span>
                 </div>
 
                 <!-- file hidden -->
@@ -83,6 +85,7 @@
                 <div class="col-sm-6">
                     <label for="exampleFormControlTextarea1" class="form-label">Alamat Lengkap</label>
                     <textarea name="alamat_lengkap" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Misal : Jalan Pandega Marta XI No.1, Manggung, Caturtunggal, Kec. Depok, Kab. Sleman, Daerah Istimewa Yogyakarta"></textarea>
+                    <span class="text-danger"><?php echo form_error('alamat_lengkap')?></span>
                 </div>
 
                 <div class="col-sm-6">
@@ -91,6 +94,7 @@
                     <div class="invalid-feedback">
                         Valid last name is required.
                     </div>
+                    <span class="text-danger"><?php echo form_error('tanggal_booking')?></span>
                 </div>
 
                 <h4 class="mb-3">Fotokan Kendala yang Anda Alami</h4>
@@ -99,12 +103,14 @@
                     <input type="file" name="foto_kendala" class="form-control" style="width: 400px;" required>
                         <!-- <img src="./assets/fotokerusakan.png" alt="" style="width: 150px; height: 150px;"> -->
                     </div>
+                    <span class="text-danger"><?php echo form_error('foto_kendala')?></span>
                 </div>
                 
 
                 <div class="col-sm-12">
                     <h4 for="exampleFormControlTextarea" class="form-label">Deskripsikan Masalah Anda!</h4>
                     <textarea name="deskripsi_booking" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Contoh : AC tidak dingin meskipun sudah dinyalakan lama. Mungkin perlu servis atau pengisian freon."></textarea>
+                    <span class="text-danger"><?php echo form_error('deskripsi_booking')?></span>
                 </div>
                 <button class="w-100 btn btn-primary btn-lg my-5"  type="submit" style="background-color: #024CAA">Booking</button>
             </div>

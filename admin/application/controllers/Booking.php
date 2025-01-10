@@ -22,4 +22,11 @@ class booking extends  CI_Controller
         $this->load->view('booking_tampil', $data);
         $this->load->view('footer');
     }
+
+    function hapus($id_booking) {
+		$this->load->model("Mbooking");
+		$this->Mbooking->hapus($id_booking);
+		$this->session->set_flashdata('pesan_sukses','Data booking terhapus');
+		redirect('booking','refresh');
+	}
 }

@@ -20,6 +20,12 @@ class Mitra extends CI_Controller
         $this->form_validation->set_rules('kecamatan', 'kecamatan', 'required');
 		$this->form_validation->set_rules('pengalaman_mitra', 'Pengalaman ', 'required');
 
+
+		// $this->form_validation->set_rules('peran', 'peran', 'required');
+		// $this->form_validation->set_rules('keahlian', 'keahlian', 'required');
+
+
+
 		$this->form_validation->set_message('required', '%s wajib di isi');
 		$this->form_validation->set_message('is_unique', '%s sudah ada yang isi');
 

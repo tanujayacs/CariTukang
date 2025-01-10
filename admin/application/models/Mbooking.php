@@ -48,5 +48,11 @@ class Mbooking extends CI_Model
 
         $this->db->insert('booking', $inputan);
     }
+
+    function hapus($id_booking)
+	{
+		$this->db->Where('id_booking', $id_booking);
+		$this->db->delete('booking');
+	}
 	
 }
