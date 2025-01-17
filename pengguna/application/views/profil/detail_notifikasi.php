@@ -17,7 +17,7 @@
                         <!-- Gambar -->
                         <div class="col-md-5">
                             <img src="./assets/fotouser.png" alt="Tukang yang Anda Pesan"
-                                class="img-fluid rounded">
+                                class="img-fluid rounded" style="max-height: 200px; width: 100%; object-fit: cover;">
                         </div>
                         <!-- Detail Pesanan -->
                         <div class="col-md-7 d-flex flex-column justify-content-center">

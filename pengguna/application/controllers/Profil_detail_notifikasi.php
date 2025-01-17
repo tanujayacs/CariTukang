@@ -9,7 +9,6 @@ class Profil_detail_notifikasi extends CI_Controller
         $this->load->view('profil/side_profil');
         $this->load->view('profil/detail_notifikasi');
         // $this->load->view('footer');
-        
 
     }
 }

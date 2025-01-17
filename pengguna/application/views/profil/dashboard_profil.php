@@ -1,7 +1,7 @@
 
     <!-- CONTENT -->
     <div class="dashboard-content flex-grow-1">
-        <h1>Hi, <?php echo $this->session->userdata("nama_customer") ?></h1>
+        <h1 class="fw-bold">Hi, <?php echo $this->session->userdata("nama_customer") ?></h1>
         <!-- <p>Dengan jumlah booking kelipatan 10, dapatkan penawaran menarik</p> -->
 
         <div class="row">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card p-3 mb-4 card-review shadow">
+                <div class="card p-5 mb-4 card-review shadow">
                     <span>⭐⭐⭐⭐⭐</span>
                     <p class="mb-0">Merasa puas dengan hasilnya...</p>
                     <a href="<?php echo base_url('ulasan') ?>" class="btn btn-light mt-2">Lihat Ulasan</a>
