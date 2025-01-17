@@ -113,7 +113,6 @@
     .dashboard-content {
         margin-left: 270px;
         padding: 40px;
-        margin-top: 80px;
     }
 
     .card {
@@ -213,7 +212,7 @@
         }
 
         .dashboard-content {
-            margin-left: 400px;
+            margin-left: 350px;
         }
     }
 
@@ -248,7 +247,7 @@
             <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
                 <i class="bi bi-house-fill mx-2"></i> Dashboard
             </a>
-            <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
+            <a href="<?php echo base_url('profil_notifikasi') ?>" class="btn btn-light sidebar-button">
                 <i class="bi bi-bell-fill  mx-2"></i></i> Notifikasi
             </a>
             <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
