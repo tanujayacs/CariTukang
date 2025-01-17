@@ -5,8 +5,8 @@
         <!-- <p>Dengan jumlah booking kelipatan 10, dapatkan penawaran menarik</p> -->
 
         <div class="row">
-            <div class="col-md-6">
-                <div class="card p-3 mb-4">
+            <div class="col-md-6 ">
+                <div class="card p-3 mb-4 shadow">
                     <h3 class="fw-bold">Booking Tukang</h3>
                     <p>12 tukang telah membantu</p>
                     <ul class="list-unstyled">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card p-3 mb-4 card-review">
+                <div class="card p-3 mb-4 card-review shadow">
                     <span>⭐⭐⭐⭐⭐</span>
                     <p class="mb-0">Merasa puas dengan hasilnya...</p>
                     <a href="<?php echo base_url('ulasan') ?>" class="btn btn-light mt-2">Lihat Ulasan</a>
