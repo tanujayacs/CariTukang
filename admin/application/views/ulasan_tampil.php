@@ -26,7 +26,7 @@
                         <td><?php echo $k + 1; ?></td>
                         <td><?php echo $v['jumlah_ulasan'];  ?></td>
                         <td><?php echo $v['deskripsi_ulasan'];  ?></td>
-                        <td><?php echo $v['waktu_ulasan'];  ?></td>
+                        <td><?php echo date('d-m-Y', strtotime($v['waktu_ulasan']));  ?></td>
                         <td><?php echo $v['nama_customer'];  ?></td>
                     </tr>
                 <?php endforeach ?>
