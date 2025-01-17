@@ -1,6 +1,6 @@
 <!-- CONTENT -->
 <div class="dashboard-content flex-grow-1">
-            <div class="d-flex mt-3">
+            <div class="d-flex">
                 <div class="status">
                     <h3>Status Booking</h3>
                     <span class="badge bg-primary">Selesai</span>
@@ -17,7 +17,7 @@
                         <!-- Gambar -->
                         <div class="col-md-5">
                             <img src="./assets/fotouser.png" alt="Tukang yang Anda Pesan"
-                                class="img-fluid rounded" style="max-height: 200px; width: 100%; object-fit: cover;">
+                                class="img-fluid rounded" >
                         </div>
                         <!-- Detail Pesanan -->
                         <div class="col-md-7 d-flex flex-column justify-content-center">
