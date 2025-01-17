@@ -24,7 +24,7 @@
 
     <!-- Notifikasi dengan Status Selesai -->
     <div class="list-group-item d-flex flex-column p-3 mb-2 rounded-3 shadow">
-      <a href="#" style="text-decoration:none; color:black;">
+      <a href="<?php echo base_url('notifikasi/detail_notifikasi'); ?>" style="text-decoration:none; color:black;">
       <div class="d-flex justify-content-between align-items-center">
         <span class="fw-bold">20 Okt 2025</span>
         <span class="badge bg-success">Selesai</span>

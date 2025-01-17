@@ -7,7 +7,7 @@
         <div class="col-lg-6 col-12">  
             <div class="small-box bg-info">  
                 <div class="inner">  
-                    <h3>150</h3>  
+                    <h3><?php echo $total_bookings; ?></h3>  
                     <p>Total booking</p>  
                 </div>  
                 <div class="icon">  
@@ -22,7 +22,7 @@
         <div class="col-lg-6 col-12">  
             <div class="small-box bg-gradient-success">  
                 <div class="inner">  
-                    <h3>44</h3>  
+                    <h3><?php echo $total_mitra; ?></h3>  
                     <p>Daftar sebagai tukang</p>  
                 </div>  
                 <div class="icon">  

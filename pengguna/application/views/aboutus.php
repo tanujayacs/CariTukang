@@ -1,12 +1,13 @@
     <!-- about us -->
     <div class="bg-white text-dark d-flex justify-content-center align-items-center vh-100">
         <div class="container">
-            <h1 class="text-center">About Us</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fuga molestiae dicta nihil totam aliquid debitis modi ullam natus dolores aut autem, expedita hic tempora suscipit quisquam, illo sit. Recusandae incidunt aliquid nihil voluptate perspiciatis commodi tempora quasi fugiat deserunt, provident, amet autem deleniti saepe enim animi ad ratione iste? </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis assumenda accusamus debitis, enim repellat nihil quae cum saepe voluptates, laborum provident adipisci fugiat quia quam aut. Delectus rem praesentium voluptatum eius accusantium! Aliquam in mollitia molestiae commodi culpa. Doloribus laudantium dolorem a quae. Culpa animi eveniet eos aliquam maiores quos, rerum dolores! Labore tenetur ad dolores veritatis perspiciatis atque?</p>
+            <h1 class="text-center mb-5">About Us</h1>
+            <p> Selamat datang di CariTukang Kami adalah platform yang membantu Anda menemukan tukang bangunan terpercaya di Yogyakarta untuk berbagai kebutuhan konstruksi dan perbaikan. </p>
+            <p>Kami paham betapa pentingnya proyek rumah atau bangunan Anda, baik itu besar maupun kecil. Karena itu, kami hadir untuk menghubungkan Anda dengan tukang yang profesional dan siap membantu.</p>
         </div>
     </div>
     <!-- end about us -->
+
 
     <!-- visi -->
     <div class="bg-primary text-white d-flex justify-content-center align-items-center vh-100">
@@ -19,16 +20,11 @@
                 <!-- Kolom Teks -->
                 <div class="col-sm-8">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas, facere maxime
-                        perferendis laboriosam illo modi quam ipsam at minima aliquam architecto sit quisquam,
-                        fugit non cum, blanditiis in esse consequuntur commodi rem ullam? Quisquam libero iure
-                        suscipit autem omnis possimus iusto soluta, doloribus earum voluptatibus labore
-                        explicabo architecto adipisci consectetur voluptatum officia natus eaque aliquid nostrum
-                        error. Accusantium, id inventore quam quia reprehenderit corrupti quas quod quidem
-                        fugiat magnam tempore explicabo animi perspiciatis similique veritatis perferendis vel
-                        delectus, sed minima consequuntur, atque illo impedit fuga? Laudantium optio iure
-                        architecto sit? Officia nostrum quis laboriosam exercitationem! Quasi aperiam impedit
-                        ea.
+                        Menjadi platform digital terbaik di Indonesia yang menghubungkan pelanggan dengan tenaga tukang profesional secara mudah, cepat, dan transparan, sekaligus menciptakan ekosistem layanan konstruksi dan perbaikan yang berkualitas tinggi. CariTukang berkomitmen untuk memberikan solusi inovatif dengan memanfaatkan teknologi modern untuk memenuhi kebutuhan pelanggan dengan efisien, mulai dari perbaikan kecil hingga proyek konstruksi skala besar.
+
+                        Kami berfokus pada peningkatan kualitas layanan melalui penyediaan tukang yang terlatih, penggunaan alat dan material berkualitas, serta sistem evaluasi yang berbasis ulasan pelanggan untuk menjaga kepercayaan dan kepuasan. Selain itu, CariTukang juga mendukung pemberdayaan tenaga kerja lokal dengan memberikan akses kepada para tukang untuk mendapatkan pekerjaan yang lebih luas, meningkatkan keterampilan mereka, dan secara langsung berkontribusi pada pertumbuhan ekonomi daerah.
+
+                        Melalui visi ini, CariTukang berharap dapat menjadi solusi terpercaya bagi masyarakat Indonesia dalam membangun dan merawat rumah, kantor, dan lingkungan dengan standar terbaik yang sesuai dengan kebutuhan era digital.
                     </p>
                 </div>
             </div>
@@ -46,27 +42,15 @@
                 </div>
                 <div class="col-sm-8">
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quo quos inventore alias, vel
-                            dignissimos.
-                            Error, velit blanditiis ducimus, odit dicta cum consectetur quia aspernatur consequuntur
-                            molestias
-                            tempora id! Distinctio!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quo quos inventore alias, vel
-                            dignissimos.
-                            Error, velit blanditiis ducimus, odit dicta cum consectetur quia aspernatur consequuntur
-                            molestias
-                            tempora id! Distinctio!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quo quos inventore alias, vel
-                            dignissimos.
-                            Error, velit blanditiis ducimus, odit dicta cum consectetur quia aspernatur consequuntur
-                            molestias
-                            tempora id! Distinctio!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quo quos inventore alias, vel
-                            dignissimos.
-                            Error, velit blanditiis ducimus, odit dicta cum consectetur quia aspernatur consequuntur
-                            molestias
-                            tempora id! Distinctio!</li>
+                        <li> Menyediakan tukang yang sudah terlatih dan terpercaya, agar Anda merasa aman saat mempercayakan proyek Anda kepada kami.</li>
+                        <li>Membangun situs yang mudah dipahami dan digunakan, sehingga Anda bisa mencari dan memilih tukang dengan cepat.</li>
+                        <li>Menggunakan teknologi modern untuk memudahkan komunikasi dan transaksi antara Anda dan tukang.</li>
+                        <li>Mendukung praktik konstruksi yang baik dan ramah lingkungan</li>
                     </ul>
+
+
+
+
 
                 </div>
             </div>

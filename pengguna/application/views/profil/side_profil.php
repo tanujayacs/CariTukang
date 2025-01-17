@@ -80,6 +80,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         padding: 10px;
+    
         /* Memberikan ruang dalam tombol */
     }
 
@@ -148,6 +149,7 @@
     .sidebar-button {
         width: 100%;
         margin: 5px 0;
+        margin-right: 100px;
     }
 
     .card-review {
@@ -248,10 +250,10 @@
             <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
                 <i class="bi bi-house-fill mx-2"></i> Dashboard
             </a>
-            <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
+            <a href="<?php echo base_url('notifikasi') ?>" class="btn btn-light sidebar-button">
                 <i class="bi bi-bell-fill  mx-2"></i></i> Notifikasi
             </a>
-            <a href="<?php echo base_url('profil') ?>" class="btn btn-light sidebar-button">
+            <a href="<?php echo base_url('setting') ?>" class="btn btn-light sidebar-button">
                 <i class="bi bi-gear-fill mx-2"></i> Settings
             </a>
         </div>

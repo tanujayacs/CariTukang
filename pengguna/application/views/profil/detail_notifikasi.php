@@ -1,15 +1,15 @@
 <!-- CONTENT -->
 <div class="dashboard-content flex-grow-1">
             <div class="d-flex mt-3">
-                <div class="status">
+                <div class="status ">
                     <h3>Status Booking</h3>
-                    <span class="badge bg-primary">Selesai</span>
+                    <span class="badge bg-success">Selesai</span>
                 </div>
-                <div class="tgl text-end">
+            </div>
+            <div class="tgl text-end">
                     <h5>Tanggal Booking:</h5>
                     <h5>Selasa, 29 Februari 2025</h5>
                 </div>
-            </div>
             <div class="container mt-4">
                 <div class="card p-3 shadow-sm">
                     <!-- Bagian Atas: Gambar dan Detail Pesanan -->
