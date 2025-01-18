@@ -1,52 +1,48 @@
 <!-- CONTENT -->
 <div class="dashboard-content flex-grow-1">
-            <div class="d-flex mt-3">
-                <div class="status ">
-                    <h3>Status Booking</h3>
-                    <span class="badge bg-success">Selesai</span>
-                </div>
-            </div>
-            <div class="tgl text-end">
-                    <h5>Tanggal Booking:</h5>
-                    <h5>Selasa, 29 Februari 2025</h5>
-                </div>
-            <div class="container mt-4">
-                <div class="card p-3 shadow-sm">
-                    <!-- Bagian Atas: Gambar dan Detail Pesanan -->
-                    <div class="row">
-                        <!-- Gambar -->
-                        <div class="col-md-5">
-                            <img src="./assets/fotouser.png" alt="Tukang yang Anda Pesan"
-                                class="img-fluid rounded">
-                        </div>
-                        <!-- Detail Pesanan -->
-                        <div class="col-md-7 d-flex flex-column justify-content-center">
-                            <h5 class="fw-bold">Detail Booking</h5>
-                            <div>
-                                <h6 class="fw-bold mb-1">Tukang yang Anda Pesan</h6>
-                                <p class="mb-2">Tukang Listrik</p>
-                            </div>
-                            <div>
-                                <h6 class="fw-bold mb-1">Alamat Anda</h6>
-                                <p class="mb-2">Jl. Wijaya Kusuma, 03/04 Condong Catur, Kec. Depok, Kabupaten Sleman,
-                                    Yogyakarta</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Bagian Bawah: Deskripsi Masalah -->
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <h6 class="fw-bold mb-1">Deskripsi Masalah Anda</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur. Amet egestas lorem felis a sed id suspendisse. Id
-                                sit sit leo a urna aliquet. Congue massa eu elementum consequat risus magna. Et nec ut
-                                eget gravida.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex btn-card">
-                <button class="btn btn-primary flex-grow-1 m-3">Beri Ulasan</button>
-            </div>
-
-
+    <div class="d-flex mt-3 justify-content-between">
+        <div class="status">
+            <h3>Status Booking</h3>
+             <span class="badge <?= $booking['status_booking'] == 'selesai' ? 'bg-success' : 'bg-warning text-dark' ?>">  
+              <?= $booking['status_booking'] ?>  
+            </span>  
         </div>
+        <div class="tgl text-end">
+            <h5>Tanggal Booking:</h5>
+            <h5><?= date('l, d F Y', strtotime($booking['tanggal_booking'])) ?></h5>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="card px-4 py-2 shadow-sm">
+            <div class="row">
+                <div class="col-md-4">
+                    <?php
+                    $image_url = $config['url_booking'] . $booking['foto_kendala'];
+                    echo '<img src="' . $image_url . '" alt="Tukang yang Anda Pesan" style="max-width: 300px; class="img-fluid rounded">';
+                    ?>
+                </div>
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                    <h5 class="fw-bold">Detail Booking</h5>
+                    <div>
+                        <h6 class="fw-bold mb-1">Tukang yang Anda Pesan</h6>
+                        <p class="mb-2"><?= $booking['nama_booking'] ?></p>
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Alamat Anda</h6>
+                        <p class="mb-2"><?= $booking['alamat_lengkap'] ?>, <?= $booking['kecamatan'] ?>, <?= $booking['kabupaten/kota'] ?></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <h6 class="fw-bold mb-1">Deskripsi Masalah Anda</h6>
+                    <p><?= $booking['deskripsi_booking'] ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex btn-card">
+        <button class="btn btn-primary flex-grow-1 m-3"><a href="<?php echo base_url('ulasan') ?>"> Beri Ulasan</a></button>
+    </div>
+</div>

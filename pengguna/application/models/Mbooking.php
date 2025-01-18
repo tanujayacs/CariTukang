@@ -28,6 +28,20 @@ class Mbooking extends CI_Model{
 
         $this->db->insert('booking', $inputan);
     }
+        public function get_booking_by_customer($customer_id) {  
+            $this->db->where('id_customer', $customer_id);  
+            $query = $this->db->get('booking');  
+            return $query->result_array(); // Mengembalikan array dari hasil query  
+        }  
+
+        public function get_booking_by_id($id_booking) {  
+            $this->db->where('id_booking', $id_booking);  
+            $query = $this->db->get('booking');  
+            return $query->row_array(); // Mengembalikan satu baris data  
+        }  
+        
+    
+    
 
     // function hapus($id_booking)
     // {

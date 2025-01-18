@@ -35,4 +35,11 @@ class Mcustomer extends CI_Model{
 		$this->db->insert('customer', $m);
 		
 	}
+
+	public function get_customer_by_id($id_customer) {  
+		$this->db->where('id_customer', $id_customer);  
+		$query = $this->db->get('customer');  
+	  
+		return $query->row_array(); // Mengembalikan data customer  
+	}
 }
