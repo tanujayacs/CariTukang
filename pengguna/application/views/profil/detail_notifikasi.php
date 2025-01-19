@@ -3,9 +3,9 @@
     <div class="d-flex mt-3 justify-content-between">
         <div class="status">
             <h3>Status Booking</h3>
-             <span class="badge <?= $booking['status_booking'] == 'selesai' ? 'bg-success' : 'bg-warning text-dark' ?>">  
-              <?= $booking['status_booking'] ?>  
-            </span>  
+            <span class="badge <?= $booking['status_booking'] == 'selesai' ? 'bg-success' : 'bg-warning text-dark' ?>">
+                <?= $booking['status_booking'] ?>
+            </span>
         </div>
         <div class="tgl text-end">
             <h5>Tanggal Booking:</h5>
@@ -43,6 +43,6 @@
         </div>
     </div>
     <div class="d-flex btn-card">
-        <button class="btn btn-primary flex-grow-1 m-3"><a href="<?php echo base_url('ulasan') ?>"> Beri Ulasan</a></button>
+        <a href="<?php echo base_url('ulasan') ?>" class="btn btn-primary flex-grow-1 m-3"> Beri Ulasan</a>
     </div>
 </div>

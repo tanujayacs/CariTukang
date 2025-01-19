@@ -31,15 +31,11 @@
 					<td><?php echo $value['nama_peran'] ?></td>
 					<td><?php echo $value['nama_keahlian'] ?></td>
 					<td class="text-center">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<a href="<?php echo base_url("mitra/ubah/" . $value["id_mitra"]) ?>" class="btn btn-warning me btn-sm">Ubah</a>
+						<div role="group" aria-label="Basic example">
+							<a href="<?php echo base_url("mitra/ubah/" . $value["id_mitra"]) ?>" class="btn btn-warning btn-sm">Ubah</a>
 							<a href="<?php echo base_url("mitra/hapus/" . $value["id_mitra"]) ?>" class="btn btn-danger btn-sm">Hapus</a>
 						</div>
 					</td>
-
-					<!-- <td>
-						<a href="<?php echo base_url("mitra/detail/" . $value['id_mitra']) ?>" class="btn btn-primary">Opsi</a>
-					</td> -->
 				</tr>
 			<?php endforeach ?>
 

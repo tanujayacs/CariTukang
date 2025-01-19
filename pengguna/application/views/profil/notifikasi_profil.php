@@ -2,10 +2,10 @@
   <h2 class="fw-bold mb-4">Notifikasi</h2>  
   <div class="d-flex justify-content-between align-items-center mb-3">  
     <div class="d-flex gap-3">  
-      <button class="btn btn-primary fw-bold shadow" style="Color: #024CAA;">Semua</button>  
-      <button class="btn bg-white fw-bold shadow">Belum Terbaca</button>  
+      <button class="btn btn-primary text-white shadow" style="Color: #024CAA;">Semua</button>  
+      <!-- <button class="btn bg-white fw-bold shadow">Belum Terbaca</button>   -->
     </div>  
-    <button class="btn bg-white fw-bold shadow">Pilih Notifikasi</button>  
+    <!-- <button class="btn bg-white fw-bold shadow">Pilih Notifikasi</button> -->
   </div>  
   
   <div class="list-group">  
