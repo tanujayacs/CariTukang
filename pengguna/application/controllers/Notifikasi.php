@@ -7,18 +7,15 @@ class Notifikasi extends CI_Controller
 
         $this->load->model('Mnotifikasi');
         $this->load->model('Mbooking');
-        $id_booking = $this->session->userdata('id_booking'); // Ambil ID customer dari session  
+        // $id_booking = $this->session->userdata('id_booking'); 
         $customer_id = $this->session->userdata('id_customer');  
-        $data['notifikasi'] = $this->Mnotifikasi->get_all_notifikasi($id_booking); // Ambil notifikasi berdasarkan ID customer  
-        $data['booking'] = $this->Mbooking->get_booking_by_customer($customer_id); // Ambil data booking  
+        // $data['notifikasi'] = $this->Mnotifikasi->get_all_notifikasi($id_booking); 
+        $data['booking'] = $this->Mbooking->get_booking_by_customer($customer_id);
       
         $this->load->view('header');  
         $this->load->view('profil/side_profil');  
         $this->load->view('profil/notifikasi_profil', $data);  
-        // $this->load->view('footer');  
     }  
-     
-    
 
     public function detail_notifikasi($id_booking)
     {
@@ -34,8 +31,5 @@ class Notifikasi extends CI_Controller
         $this->load->view('header');
         $this->load->view('profil/side_profil');
         $this->load->view('profil/detail_notifikasi', $data);
-        // $this->load->view('footer');
-
-
     }
 }

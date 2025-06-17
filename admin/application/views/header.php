@@ -21,9 +21,9 @@
                             <a class="dropdown-item" href="<?php echo base_url('logout'); ?>">
                                 <i class="bi bi-arrow-return-left me-1"></i>
                                 <span>Logout</span>
-                                <!-- <li class="nav-item">
-                            <a href="<?php echo base_url("logout") ?>" class="nav-link">Logout</a>
-                        </li>    -->
+                                <li class="nav-item">
+                            <a href="<?php echo base_url("logout") ?>" class="nav-link text-dark">Logout</a>
+                        </li>   
                             </a>
                         </li>
                     </ul>

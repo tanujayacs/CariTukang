@@ -1,9 +1,15 @@
 <?php 
 class Mperan extends CI_Model {
 	function tampil() {
-		$data = $this->db->get('peran');
-		$dt = $data->result_array();
-		return $dt;
+		$data = $this->db->get('peran'); // Sudah ditambahkan titik koma
+        $dt = $data->result_array();
+
+        // Debugging manual untuk memeriksa isi data
+        echo '<pre>';
+        print_r($dt);
+        echo '</pre>';
+
+        return $dt;
 	}
 
     function detail($id_peran)

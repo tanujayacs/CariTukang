@@ -20,9 +20,9 @@ class Mbooking extends CI_Model
     {
        
         $this->db->from('booking');
-        $this->db->join('customer', 'booking.id_customer = customer.id_customer', 'left'); // Join tabel customer
+        $this->db->join('customer', 'booking.id_customer = customer.id_customer', 'left');
         $query = $this->db->get();
-        return $query->result_array(); // Kembalikan data sebagai array
+        return $query->result_array(); 
     }
 
     function keahlian()

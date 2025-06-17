@@ -45,6 +45,7 @@ class Ulasan extends CI_Controller
             ];  
       
             if ($this->Mulasan->tambah($data)) {  
+                $this->session->set_flashdata('pesan_sukses', 'ulasan di tambahkan');
                 redirect('ulasan');   
             } else {  
                 echo "Gagal menambahkan ulasan!";  

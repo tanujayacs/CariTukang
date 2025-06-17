@@ -35,30 +35,43 @@ class mitra extends  CI_Controller
         $data['mitra'] = $this->Mmitra->detail($id_mitra);  
         $data['peran'] = $this->Mmitra->peran();  
         $data['keahlian'] = $this->Mmitra->keahlian();   
-        // // $data['mitra'] = $this->Mmitra->detail($id_mitra);    
-    
+
+        // Cek apakah mitra ditemukan
+        if (!$data['mitra']) {
+            $this->session->set_flashdata('error', 'Data mitra tidak ditemukan');
+            redirect('mitra');
+            return;
+        }
+        
         if ($this->input->post()) {    
             $update_data = [    
                 'nama_mitra' => $this->input->post('nama_mitra'),    
                 'wa_mitra' => $this->input->post('wa_mitra'),    
                 'usia_mitra' => $this->input->post('usia_mitra'),    
                 'alamat_lengkap' => $this->input->post('alamat_lengkap'),    
-                'kabupaten/kota' => $this->input->post('kabupaten/kota'),    
+                'kabupaten_kota' => $this->input->post('kabupaten_kota'),    
                 'kecamatan' => $this->input->post('kecamatan'),    
                 'id_peran' => $this->input->post('id_peran'),    
                 'pengalaman_mitra' => $this->input->post('pengalaman_mitra'),    
                 'id_keahlian' => $this->input->post('id_keahlian')    
             ];    
-    
-            $this->Mmitra->update_mitra($id_mitra, $update_data);    
-            redirect('mitra_tampil'); // Redirect ke halaman daftar mitra setelah update    
-        }    
-    
-        $this->load->view('sidebar');  
-        $this->load->view('header');  
-        $this->load->view('ubah_mitra', $data);    
-        $this->load->view('footer');  
-    }  
+
+            $berhasil = $this->Mmitra->update_mitra($id_mitra, $update_data);    
+
+            if ($berhasil) {
+                $this->session->set_flashdata('success', 'Data mitra berhasil diperbarui');
+            } else {
+                $this->session->set_flashdata('error', 'Gagal memperbarui data mitra');
+            }
+
+            redirect('mitra'); 
+        } else {
+            // Tampilkan form ubah dengan data mitra
+            $this->load->view('header');
+            $this->load->view('mitra/ubah', $data);
+        }
+    }
+  
 
     function hapus($id_mitra) {
 		$this->load->model("Mmitra");

@@ -26,7 +26,7 @@
  <!-- HERO -->
  <div class="hero">
         <div class="text" id="hero-text">
-            Temukan Tukang Terbaik Untuk Semua Kebutuhan Renovasi Anda
+            <h1 class="fw-bold">Temukan <span style="color: orange;">Tukang Terbaik</span> Untuk Semua Kebutuhan Renovasi Anda</h1>
             <br>
             <button id="booking-button">Booking Sekarang</button>
         </div>
@@ -40,7 +40,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/interior.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon1'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -53,7 +53,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/plumbing.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon2'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -66,7 +66,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/elektrikal.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon3'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -79,7 +79,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/interior.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon4'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -92,7 +92,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/eksterior.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon5'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -105,7 +105,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/pengelasan.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon6'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -118,7 +118,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/konstruksi.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon7'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -131,7 +131,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                 <div class="card h-100 p-3">
                     <div class="card-image">
-                        <img src="./assets/dapur.png" class="card-img-top" alt="Desain Interior"
+                        <img src="<?php echo $this->config->item('url_icon8'); ?>" class="card-img-top" alt="Desain Interior"
                             style="width: 130px;">
                     </div>
                     <div class="card-body text-center">
@@ -147,8 +147,8 @@
 
 
     <!-- PENCAPAIAN -->
-    <section id="pencapaian" class="achievement-section py-5">
-        <div class="container text-center">
+    <section id="pencapaian" class="achievement-section py-5 mt-5">
+        <div class="container text-center fw-bold">
             <h2 class="mb-5 text-start">
                 <span class="fw-bold">Pencapaian</span> <span class="text-warning">CariTukang</span>
             </h2>
@@ -156,7 +156,7 @@
                 <div class="col-lg-3 col-md-6 col-6 mb-5">
                     <div class="achievement-item">
                         <div class="circle bg-warning text-white mb-3">
-                            <h3>117+</h3>
+                            <h3 class="fw-bold">117+</h3>
                         </div>
                         <p class="text-white">Pekerjaan</p>
                     </div>
@@ -164,7 +164,7 @@
                 <div class="col-lg-3 col-md-6 col-6 mb-5">
                     <div class="achievement-item">
                         <div class="circle bg-warning text-white mb-3">
-                            <h3>117+</h3>
+                            <h3 class="fw-bold">117+</h3>
                         </div>
                         <p class="text-white">Pekerjaan</p>
                     </div>
@@ -172,7 +172,7 @@
                 <div class="col-lg-3 col-md-6 col-6">
                     <div class="achievement-item">
                         <div class="circle bg-warning text-white mb-3">
-                            <h3>117+</h3>
+                            <h3 class="fw-bold">117+</h3>
                         </div>
                         <p class="text-white">Pekerjaan</p>
                     </div>
@@ -180,7 +180,7 @@
                 <div class="col-lg-3 col-md-6 col-6">
                     <div class="achievement-item">
                         <div class="circle bg-warning text-white mb-3">
-                            <h3>117+</h3>
+                            <h3 class="fw-bold">117+</h3>
                         </div>
                         <p class="text-white">Pekerjaan</p>
                     </div>
@@ -211,7 +211,7 @@
                                 
                             </div>
                             <div>
-                                <h6>2. bjirr</h6>
+                                <h6>User 1</h6>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -228,7 +228,7 @@
                                 
                             </div>
                             <div>
-                                <h6>3. bjirr</h6>
+                                <h6>User 2</h6>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -245,7 +245,7 @@
                                 
                             </div>
                             <div>
-                                <h6>4. bjirr</h6>
+                                <h6>User 3</h6>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
@@ -262,7 +262,7 @@
                                 
                             </div>
                             <div>
-                                <h6>5. bjirr</h6>
+                                <h6>User 4</h6>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>
                                 <i class="bi bi-star-fill text-warning"></i>

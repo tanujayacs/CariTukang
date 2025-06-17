@@ -5,8 +5,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		// untuk login
-		$data['url_login'] = $this->config->item('url_login'); // Ambil dari config
-        // $this->load->view('login', $data);
+		$data['url_login'] = $this->config->item('url_login'); 
 
 		$inputan = $this->input->post();
 
@@ -20,13 +19,13 @@ class Welcome extends CI_Controller {
 			$this->load->model('Mcustomer');
 			$output = $this->Mcustomer->login($inputan);
 
-			if ($output =="ada")
+			if ($output ="ada")
 			{
 				$this->session->set_flashdata('pesan_sukses','Anda Berhasil Login');
 				redirect('profil','refresh');
 			} else {
 
-				$this->session->set_flashdata('pesan_gagal','Loh kok gk bisa Login');
+				$this->session->set_flashdata('pesan_gagal','Anda tidak bisa Login');
 				redirect('welcome','refresh');
 			}
 		}

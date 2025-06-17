@@ -46,6 +46,14 @@ $config['url_testi'] = 'http://localhost/CariTukang/assets/icon/img-testimoni.pn
 $config['url_booking'] = 'http://localhost/CariTukang/assets/icon/hero1.png';
 $config['url_mitra'] = 'http://localhost/CariTukang/assets/icon/heroo.png';
 $config['url_fotouser'] = 'http://localhost/CariTukang/assets/icon/fotouser.png';
+$config['url_icon1'] = 'http://localhost/CariTukang/assets/icon/interior-design 1.png';
+$config['url_icon2'] = 'http://localhost/CariTukang/assets/icon/paint 1.png';
+$config['url_icon3'] = 'http://localhost/CariTukang/assets/icon/roofing 1.png';
+$config['url_icon4'] = 'http://localhost/CariTukang/assets/icon/renovation 1.png';
+$config['url_icon5'] = 'http://localhost/CariTukang/assets/icon/ac.png';
+$config['url_icon6'] = 'http://localhost/CariTukang/assets/icon/ion_water.png';
+$config['url_icon7'] = 'http://localhost/CariTukang/assets/icon/game-icons_electric.png';
+$config['url_icon8'] = 'http://localhost/CariTukang/assets/icon/floor 1.png';
 // $config['url_artikel'] = 'http://localhost/CariTukang/assets/icon/gambar_artikel.png';
 
 

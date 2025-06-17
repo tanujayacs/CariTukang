@@ -7,11 +7,10 @@
             <div class="col-md-6">
                 <div class="text-end text-white fw-bold mx-5" id="hero-text">
                     <h1>
-                        <h1>
+                        <h1 class="fw-bold">
                             <span style="color: white;">BERSAMA</span>
                             <span style="color: orange;">CARITUKANG</span><span style="color: white;">,</span> <br>
-                            <span style="color: white;">DAPATKAN PELANGGAN LEBIH </span><br>
-                            <span style="color: white;">BANYAK!</span>
+                            <span style="color: white;">DAPATKAN PELANGGAN LEBIH BANYAK</span><br>
                         </h1>
 
                     </h1>
